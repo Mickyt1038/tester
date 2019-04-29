@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script
       crossorigin
       src="https://unpkg.com/react@16/umd/react.development.js"
@@ -16,13 +17,14 @@
   <body>
     <div id="app"></div>
 
-    <script>
-      alert("testing");
+    <script type="text/babel">
       class App extends React.Component {
+        state = {};
         render() {
           return (
             <div className="app-content">
-              <h1>Hey, Dudes</h1>
+              <h1>word up hoe's</h1>
+              <p>{(Math.random() * 10).toFixed(2)}</p>
             </div>
           );
         }
